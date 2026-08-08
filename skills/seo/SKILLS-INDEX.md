@@ -127,3 +127,19 @@
 - [seo-sitemap](seo-sitemap/SKILL.md)
 - [seo-sxo](seo-sxo/SKILL.md)
 - [seo-technical](seo-technical/SKILL.md)
+
+## Yoast SEO Extracted Capabilities
+- [Flesch Reading Ease](yoast-flesch-reading-ease/SKILL.md)
+- [Transition Words Analysis](yoast-transition-words-analysis/SKILL.md)
+- [Consecutive Sentences Analysis](yoast-consecutive-sentences-analysis/SKILL.md)
+- [Passive Voice Tuning](yoast-passive-voice-tuning/SKILL.md)
+- [Cornerstone Content](yoast-cornerstone-content/SKILL.md)
+
+## Next-SEO Extracted Capabilities
+- [Open Graph Generation](next-seo-open-graph-generation/SKILL.md)
+- [JSON-LD Schemas](next-seo-jsonld-schemas/SKILL.md)
+
+## All-In-One SEO Extracted Capabilities
+- [TruSEO Scoring](aio-seo-trueseo-scoring/SKILL.md)
+- [Smart Sitemaps](aio-seo-smart-sitemaps/SKILL.md)
+- [Local Business Schema](aio-seo-local-business-schema/SKILL.md)

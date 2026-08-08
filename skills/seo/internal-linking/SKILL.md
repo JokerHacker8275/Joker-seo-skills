@@ -29,3 +29,27 @@ IF tasked with improving a page's rank:
 1. SEARCH the domain for contextually relevant source pages.
 2. EXTRACT paragraphs mentioning related topics.
 3. RECOMMEND specific anchor text and insertion points for internal links.
+
+
+## 🤖 OPERATIONAL WORKFLOW & AI AGENT EXECUTION
+
+### 1. Error Handling & Edge Cases
+| Scenario | Action |
+|----------|--------|
+| **URL Unreachable (DNS/404/500)** | Report failure clearly. Do not guess page content. Suggest verifying the URL. |
+| **Content Behind Paywall / Login** | Analyze visible portion only (meta tags, headers). Note the limitation. |
+| **Thin Content (<100 words)** | Flag as potentially JS-rendered or gated. Request full HTML dump if needed. |
+| **JavaScript Rendering Blocked** | Fallback to raw HTML analysis and warn user of rendering disparities. |
+
+### 2. Required Data Sources & Tool Integrations
+When executing this skill, an AI agent should ideally leverage:
+*   **Google Search Console API:** For indexing status, CTR, and query data.
+*   **PageSpeed Insights / CrUX API:** For Core Web Vitals field data.
+*   **Ahrefs / Moz / DataForSEO:** For backlink index and keyword search volume.
+*   **Firecrawl / Jina AI:** For deep-page extraction and semantic parsing.
+
+### 3. Technical Execution Priorities
+*   **LCP, INP, CLS:** Focus on the modern 3 Core Web Vitals. (FID is deprecated as of March 2024).
+*   **JavaScript SEO:** Differentiate between initial HTML and post-hydration DOM.
+*   **Server Log Analysis:** Cross-reference Googlebot crawl frequency against actual site hierarchy.
+*   **AI Bot Tracking:** Monitor `GPTBot`, `ClaudeBot`, `PerplexityBot`, and `OAI-SearchBot` hits in logs to gauge LLM crawl interest.

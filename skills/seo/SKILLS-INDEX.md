@@ -90,3 +90,12 @@
 - playbooks
 - glossary
 - templates
+
+## Advanced & Repositories
+- [Next.js SEO](nextjs-seo/SKILL.md)
+- [WordPress & Yoast SEO](wordpress-yoast-seo/SKILL.md)
+- [AI Visibility Tracking](ai-visibility-tracking/SKILL.md)
+- [Server Log Bot Tracking](server-log-bot-tracking/SKILL.md)
+- [SXO & Search Experience](sxo-search-experience/SKILL.md)
+- [SEO Drift Monitoring](seo-drift-monitoring/SKILL.md)
+- [Programmatic SEO (pSEO)](programmatic-seo/SKILL.md)

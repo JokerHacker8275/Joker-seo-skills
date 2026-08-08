@@ -23,3 +23,26 @@ IF auditing a strategy for white-hat compliance:
 1. VERIFY that all backlinks were acquired without financial compensation or reciprocal exchanges.
 2. VERIFY that content is not programmatically generated at scale without human review (SpamBrain compliance).
 3. VERIFY that the content shown to Googlebot is identical to the content shown to the user (No cloaking).
+
+
+## 🤖 OPERATIONAL WORKFLOW & AI AGENT EXECUTION
+
+### 1. Error Handling & Edge Cases
+| Scenario | Action |
+|----------|--------|
+| **URL Unreachable (DNS/404/500)** | Report failure clearly. Do not guess page content. Suggest verifying the URL. |
+| **Content Behind Paywall / Login** | Analyze visible portion only (meta tags, headers). Note the limitation. |
+| **Thin Content (<100 words)** | Flag as potentially JS-rendered or gated. Request full HTML dump if needed. |
+| **JavaScript Rendering Blocked** | Fallback to raw HTML analysis and warn user of rendering disparities. |
+
+### 2. Required Data Sources & Tool Integrations
+When executing this skill, an AI agent should ideally leverage:
+*   **Google Search Console API:** For indexing status, CTR, and query data.
+*   **PageSpeed Insights / CrUX API:** For Core Web Vitals field data.
+*   **Ahrefs / Moz / DataForSEO:** For backlink index and keyword search volume.
+*   **Firecrawl / Jina AI:** For deep-page extraction and semantic parsing.
+
+### 3. Off-Page Execution Priorities
+*   **Toxic Link Flagging:** Identify unnatural velocity spikes or irrelevant anchor text distributions.
+*   **Citation Landscape:** Map which domains LLMs (Perplexity/ChatGPT) are citing for target queries.
+*   **Disavow Workflow:** Only recommend disavow if a manual penalty is present or negative SEO is blatantly obvious and algorithmic dampening fails.

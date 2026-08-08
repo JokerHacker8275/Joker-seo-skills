@@ -1,42 +1,29 @@
-# SEO Skill: mobile seo
+# Mobile SEO
 
 ## Purpose
-Define the purpose and SEO outcome for mobile seo.
+To optimize a website for users on smartphones and tablets, ensuring flawless rendering, usability, and speed on smaller screens and cellular networks.
 
-## When to use
-Document when an SEO system should invoke this skill.
+## What This Skill Does
+Aligns the website with Google's **Mobile-First Indexing**. Google predominantly uses the mobile version of the content for indexing and ranking. If your desktop site is perfect but your mobile site is broken or missing content, your rankings will plummet.
 
-## Inputs
-- Website and target market
-- Search and analytics data
-- Relevant technical or content data
+## Core Concepts
+- **Mobile-First Indexing**: Googlebot crawls as a smartphone agent. The mobile DOM is the only DOM that matters for ranking.
+- **Responsive Design**: The recommended approach. Serving the exact same HTML on the same URL, using CSS media queries to adjust the layout based on screen size.
+- **Dynamic Serving / Separate URLs (m.dot)**: Legacy mobile setups. Avoid these if possible as they complicate SEO and canonicalization.
+- **Tap Targets**: Buttons and links must be large enough and spaced far enough apart for a finger to tap without hitting the wrong link.
 
-## Workflow
-1. Collect and validate inputs.
-2. Analyze relevant SEO signals.
-3. Identify opportunities, problems, and risks.
-4. Prioritize actions by impact and effort.
-5. Implement or recommend changes.
-6. Validate results.
-7. Monitor and iterate.
+## Step-by-Step Workflow
+1. **Parity Audit**: Use Chrome DevTools to inspect both Desktop and Mobile views. Does the mobile version hide text, remove internal links, or drop schema markup to "save space"? If yes, fix it. The mobile version MUST contain all vital SEO elements.
+2. **Viewport Configuration**: Ensure the `<meta name="viewport" content="width=device-width, initial-scale=1">` tag is present in the `<head>`.
+3. **Usability Check**: 
+   - Font sizes must be readable without zooming (>= 16px).
+   - Tap targets must be >= 48x48 CSS pixels.
+   - No horizontal scrolling required.
+4. **Pop-up Interstitials**: Remove intrusive pop-ups that cover the main content immediately upon navigation on mobile, as this triggers a Google penalty.
 
-## Tools
-Document appropriate tools, APIs, crawlers, analytics platforms, or scripts.
-
-## Outputs
-Define reports, findings, recommendations, briefs, or actions.
-
-## Validation
-Explain how to verify correctness and measure the outcome.
-
-## Common failures
-Document common mistakes, false positives, and troubleshooting.
-
-## Metrics
-List relevant KPIs and leading indicators.
-
-## Risks and boundaries
-Document policy, implementation, ethical, and operational risks.
-
-## Related skills
-Link related skills from this repository.
+## AI Agent Instructions
+IF auditing Mobile SEO:
+1. CHECK for Mobile/Desktop parity (Are word counts and internal links identical?).
+2. CHECK viewport meta tag presence.
+3. IDENTIFY intrusive interstitials blocking the viewport.
+4. RECOMMEND responsive CSS fixes for tap target sizing.

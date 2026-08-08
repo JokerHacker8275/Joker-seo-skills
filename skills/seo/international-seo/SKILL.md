@@ -1,42 +1,31 @@
-# SEO Skill: international seo
+# International SEO
 
 ## Purpose
-Define the purpose and SEO outcome for international seo.
+To optimize a website so that search engines can easily identify which countries you want to target and which languages you use for business, ensuring the right content serves the right local audience.
 
-## When to use
-Document when an SEO system should invoke this skill.
+## What This Skill Does
+Prevents the massive SEO disaster of language duplication, where Google doesn't know whether to serve the US English site or the UK English site, causing both to drop in rankings.
 
-## Inputs
-- Website and target market
-- Search and analytics data
-- Relevant technical or content data
+## Core Concepts
+- **Hreflang Tags**: HTML attributes (`rel="alternate" hreflang="x"`) that tell Google the language and geographical targeting of a webpage.
+- **ccTLD (Country Code Top Level Domain)**: e.g., `.co.uk`, `.de`, `.fr`. The strongest signal for geo-targeting.
+- **Subdirectories vs Subdomains**: 
+   - Subdirectory: `site.com/fr/` (Best for passing domain authority).
+   - Subdomain: `fr.site.com` (Treated as a separate entity).
+- **Geo-targeting in GSC**: Legacy feature, but ccTLDs automatically geolocate.
 
-## Workflow
-1. Collect and validate inputs.
-2. Analyze relevant SEO signals.
-3. Identify opportunities, problems, and risks.
-4. Prioritize actions by impact and effort.
-5. Implement or recommend changes.
-6. Validate results.
-7. Monitor and iterate.
+## Step-by-Step Workflow
+1. **Choose the URL Structure**: A single ` .com` with subdirectories (`/uk/`, `/au/`) is generally recommended to consolidate PageRank, unless you have distinct, localized brand entities (then use ccTLDs).
+2. **Implement Hreflang**: 
+   - Map exactly which URL corresponds to which language/region.
+   - Ensure the tags are bidirectional (Page A links to Page B, Page B MUST link back to Page A).
+   - Include an `x-default` tag for users who don't match any specified language.
+3. **Localize Content**: Don't just auto-translate. Localize currency, spellings (Color vs Colour), measurements, and cultural references.
+4. **Server Location**: Host the site (or use a CDN node) geographically close to the target audience to improve TTFB (Time to First Byte).
 
-## Tools
-Document appropriate tools, APIs, crawlers, analytics platforms, or scripts.
-
-## Outputs
-Define reports, findings, recommendations, briefs, or actions.
-
-## Validation
-Explain how to verify correctness and measure the outcome.
-
-## Common failures
-Document common mistakes, false positives, and troubleshooting.
-
-## Metrics
-List relevant KPIs and leading indicators.
-
-## Risks and boundaries
-Document policy, implementation, ethical, and operational risks.
-
-## Related skills
-Link related skills from this repository.
+## AI Agent Instructions
+IF auditing International SEO:
+1. EXTRACT all `hreflang` tags from the `<head>` or XML sitemap.
+2. VERIFY bidirectional linking.
+3. CHECK for the presence of an `x-default` tag.
+4. FLAG any identical content on different URLs lacking `hreflang` annotations as a duplication risk.

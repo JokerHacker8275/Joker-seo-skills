@@ -1,42 +1,26 @@
-# SEO Skill: digital pr
+# Digital PR
 
 ## Purpose
-Define the purpose and SEO outcome for digital pr.
+To earn high-quality, authoritative backlinks from major news publications, universities, and industry magazines by creating newsworthy content or data.
 
-## When to use
-Document when an SEO system should invoke this skill.
+## What This Skill Does
+Secures the highest tier of backlinks (DR 80+) that are impossible to buy or get via standard guest posting. It builds massive brand awareness alongside SEO authority.
 
-## Inputs
-- Website and target market
-- Search and analytics data
-- Relevant technical or content data
+## Core Concepts
+- **Linkable Asset**: A piece of content specifically designed to attract links (e.g., original research, surveys, interactive maps, or calculators).
+- **Newsjacking**: Injecting your brand or expertise into a breaking news story to earn a citation.
+- **HARO (Help A Reporter Out) / Connectively**: Platforms where journalists request quotes from experts for their articles.
+- **Media List**: A curated list of journalists who have recently written about your specific topic.
 
-## Workflow
-1. Collect and validate inputs.
-2. Analyze relevant SEO signals.
-3. Identify opportunities, problems, and risks.
-4. Prioritize actions by impact and effort.
-5. Implement or recommend changes.
-6. Validate results.
-7. Monitor and iterate.
+## Step-by-Step Workflow
+1. **Ideation**: Brainstorm a data-driven story. (e.g., "Which US state searches for X the most?").
+2. **Creation**: Gather the data, analyze it, and create a highly visual, easy-to-read landing page (the Linkable Asset).
+3. **Press Release / Pitch**: Write a concise, punchy email pitch summarizing the most shocking or interesting finding.
+4. **Distribution**: Use tools like MuckRack, Cision, or BuzzStream to email journalists.
+5. **Follow-Up**: Send one polite follow-up if they don't respond in 3 days.
 
-## Tools
-Document appropriate tools, APIs, crawlers, analytics platforms, or scripts.
-
-## Outputs
-Define reports, findings, recommendations, briefs, or actions.
-
-## Validation
-Explain how to verify correctness and measure the outcome.
-
-## Common failures
-Document common mistakes, false positives, and troubleshooting.
-
-## Metrics
-List relevant KPIs and leading indicators.
-
-## Risks and boundaries
-Document policy, implementation, ethical, and operational risks.
-
-## Related skills
-Link related skills from this repository.
+## AI Agent Instructions
+IF tasked with Digital PR ideation:
+1. ANALYZE trending topics on Google Trends and X.
+2. GENERATE 5 data-driven article concepts related to the client's industry.
+3. OUTLINE the methodology required to gather the data.

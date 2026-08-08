@@ -1,42 +1,29 @@
-# SEO Skill: image seo
+# Image SEO
 
 ## Purpose
-Define the purpose and SEO outcome for image seo.
+To optimize visual assets so they rank in Google Image Search and contribute to the overall relevance and speed of the host webpage.
 
-## When to use
-Document when an SEO system should invoke this skill.
+## What This Skill Does
+Capitalizes on visual search intent (highly relevant for e-commerce, fashion, travel, and DIY niches) while ensuring images don't destroy Core Web Vitals via slow loading.
 
-## Inputs
-- Website and target market
-- Search and analytics data
-- Relevant technical or content data
+## Core Concepts
+- **Alt Text (Alternative Text)**: An HTML attribute that describes the image for screen readers (accessibility) and search engine bots.
+- **File Name**: The actual name of the file before uploading (e.g., `red-nike-running-shoe.jpg` vs `IMG_1234.jpg`).
+- **Context**: Google looks at the text immediately surrounding the image to understand what the image is about.
+- **Image Sitemap**: A specific XML sitemap designed to help Google discover images, especially those loaded via JavaScript.
 
-## Workflow
-1. Collect and validate inputs.
-2. Analyze relevant SEO signals.
-3. Identify opportunities, problems, and risks.
-4. Prioritize actions by impact and effort.
-5. Implement or recommend changes.
-6. Validate results.
-7. Monitor and iterate.
+## Step-by-Step Workflow
+1. **File Naming**: Rename the raw file to include descriptive keywords separated by hyphens before uploading.
+2. **Compression & Formatting**: Convert JPEGs/PNGs to WebP or AVIF formats. Compress the file size (aim for < 100kb for standard images).
+3. **Write Alt Text**: Describe the image literally. Do not keyword stuff. 
+   - Bad: `alt="shoes running shoes cheap shoes"`
+   - Good: `alt="Man tying his red Nike Pegasus running shoes on a track"`
+4. **Implement Lazy Loading**: Add `loading="lazy"` to all images below the fold to improve page speed.
+5. **Structured Data**: Ensure images are included in the `Article`, `Product`, or `Recipe` schema markup.
 
-## Tools
-Document appropriate tools, APIs, crawlers, analytics platforms, or scripts.
-
-## Outputs
-Define reports, findings, recommendations, briefs, or actions.
-
-## Validation
-Explain how to verify correctness and measure the outcome.
-
-## Common failures
-Document common mistakes, false positives, and troubleshooting.
-
-## Metrics
-List relevant KPIs and leading indicators.
-
-## Risks and boundaries
-Document policy, implementation, ethical, and operational risks.
-
-## Related skills
-Link related skills from this repository.
+## AI Agent Instructions
+IF auditing images on a page:
+1. EXTRACT all `<img>` tags.
+2. CHECK for missing or empty `alt` attributes.
+3. CHECK for missing `loading="lazy"` on non-hero images.
+4. RECOMMEND optimized Alt Text based on surrounding text context.

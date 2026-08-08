@@ -1,42 +1,26 @@
-# SEO Skill: youtube seo
+# YouTube SEO
 
 ## Purpose
-Define the purpose and SEO outcome for youtube seo.
+To rank videos organically within YouTube's native search engine and recommendation algorithm.
 
-## When to use
-Document when an SEO system should invoke this skill.
+## What This Skill Does
+Focuses strictly on YouTube as a platform (the second largest search engine in the world). It optimizes for Click-Through Rate (CTR) and Audience Retention.
 
-## Inputs
-- Website and target market
-- Search and analytics data
-- Relevant technical or content data
+## Core Concepts
+- **CTR (Click-Through Rate)**: The percentage of people who click on your video after seeing the thumbnail. This is the #1 metric for YouTube SEO.
+- **Audience Retention / Watch Time**: How long people stay watching your video. 
+- **Session Starts / Ends**: Does your video cause people to keep watching YouTube, or does it make them close the app?
+- **Tags**: Largely depreciated, but still used slightly for correcting misspellings.
 
-## Workflow
-1. Collect and validate inputs.
-2. Analyze relevant SEO signals.
-3. Identify opportunities, problems, and risks.
-4. Prioritize actions by impact and effort.
-5. Implement or recommend changes.
-6. Validate results.
-7. Monitor and iterate.
+## Step-by-Step Workflow
+1. **Thumbnail & Title Optimization**: Design the thumbnail BEFORE recording the video. The thumbnail must create curiosity, and the title must deliver on the promise without being clickbait.
+2. **The Hook**: The first 15 seconds are critical. Do not use long intro logos. Get straight to the value proposition.
+3. **Description Optimization**: Write a 200+ word description. Place the primary keyword in the first sentence. Include timestamps (Chapters) in the format `0:00 Intro`, `1:30 Topic`.
+4. **Engagement**: Ask viewers to comment (e.g., "Which strategy are you using? Let me know below").
+5. **Playlists**: Group related videos into playlists to increase binge-watching and total watch time.
 
-## Tools
-Document appropriate tools, APIs, crawlers, analytics platforms, or scripts.
-
-## Outputs
-Define reports, findings, recommendations, briefs, or actions.
-
-## Validation
-Explain how to verify correctness and measure the outcome.
-
-## Common failures
-Document common mistakes, false positives, and troubleshooting.
-
-## Metrics
-List relevant KPIs and leading indicators.
-
-## Risks and boundaries
-Document policy, implementation, ethical, and operational risks.
-
-## Related skills
-Link related skills from this repository.
+## AI Agent Instructions
+IF optimizing a YouTube video:
+1. GENERATE 5 highly clickable, curiosity-inducing titles.
+2. RECOMMEND a chapter/timestamp breakdown.
+3. DRAFT an SEO-optimized description prioritizing the primary keyword in the first 150 characters.

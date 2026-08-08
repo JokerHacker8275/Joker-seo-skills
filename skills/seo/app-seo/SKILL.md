@@ -1,42 +1,27 @@
-# SEO Skill: app seo
+# App SEO (ASO - App Store Optimization)
 
 ## Purpose
-Define the purpose and SEO outcome for app seo.
+To improve the visibility and download conversion rate of mobile applications within the Apple App Store and Google Play Store.
 
-## When to use
-Document when an SEO system should invoke this skill.
+## What This Skill Does
+Functions as the SEO equivalent for mobile app ecosystems. It targets the algorithms of Apple and Google to ensure your app ranks highly when users search for specific functions (e.g., "calorie tracker").
 
-## Inputs
-- Website and target market
-- Search and analytics data
-- Relevant technical or content data
+## Core Concepts
+- **App Name / Title**: The most heavily weighted ranking factor. Must contain the brand name and the primary keyword.
+- **Subtitle / Short Description**: The secondary ranking factor, used to describe the app's core value.
+- **Keyword Field (iOS)**: A hidden 100-character field in iOS where you input exact keywords.
+- **Visuals (Screenshots & Video)**: The primary drivers of Conversion Rate (CVR).
+- **Ratings & Reviews**: High velocity and positive sentiment of reviews directly boost rankings.
 
-## Workflow
-1. Collect and validate inputs.
-2. Analyze relevant SEO signals.
-3. Identify opportunities, problems, and risks.
-4. Prioritize actions by impact and effort.
-5. Implement or recommend changes.
-6. Validate results.
-7. Monitor and iterate.
+## Step-by-Step Workflow
+1. **Keyword Research**: Use tools like Mobile Action or Sensor Tower to find high-volume, low-difficulty app store keywords. Do NOT rely strictly on web SEO keyword data, as mobile search intent differs.
+2. **Optimize the Title**: Format as `Brand Name - Core Keyword` (e.g., `MyFitnessPal - Calorie Tracker`).
+3. **Optimize the iOS Keyword Field**: Maximize the 100 characters. Use single words, separated by commas, no spaces. Do not repeat words used in the title.
+4. **Optimize Google Play Description**: Google crawls the full description for keywords (unlike Apple). Maintain a 2-3% keyword density for target terms.
+5. **A/B Test Visuals**: Continuously test new icons and screenshots to improve the install conversion rate.
 
-## Tools
-Document appropriate tools, APIs, crawlers, analytics platforms, or scripts.
-
-## Outputs
-Define reports, findings, recommendations, briefs, or actions.
-
-## Validation
-Explain how to verify correctness and measure the outcome.
-
-## Common failures
-Document common mistakes, false positives, and troubleshooting.
-
-## Metrics
-List relevant KPIs and leading indicators.
-
-## Risks and boundaries
-Document policy, implementation, ethical, and operational risks.
-
-## Related skills
-Link related skills from this repository.
+## AI Agent Instructions
+IF optimizing an App Store listing:
+1. GENERATE an optimized Title (<= 30 characters).
+2. GENERATE a comma-separated keyword string for iOS (<= 100 characters, no spaces, no plurals if singular is used).
+3. RECOMMEND 3 visual concepts for the first screenshot based on competitor analysis.

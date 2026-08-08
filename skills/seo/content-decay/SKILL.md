@@ -1,42 +1,33 @@
-# SEO Skill: content decay
+# Content Decay
 
 ## Purpose
-Define the purpose and SEO outcome for content decay.
+To identify, monitor, and reverse the gradual decline in organic traffic and rankings that affects aging content over time.
 
-## When to use
-Document when an SEO system should invoke this skill.
+## What This Skill Does
+Provides a proactive diagnostic framework for spotting traffic drops before they become catastrophic, distinguishing between algorithmic penalties and natural content lifecycle decay.
 
-## Inputs
-- Website and target market
-- Search and analytics data
-- Relevant technical or content data
+## Core Concepts
+- **Lifecycle Curve**: Content typically spikes after publishing/ranking, plateaus, and eventually decays as search intent shifts and competitors enter the space.
+- **Click-Through Rate (CTR) Decay**: Rankings might remain the same, but the title/meta description becomes less appealing compared to newer results, lowering CTR.
+- **Topical Drift**: The search engine alters what it considers the primary intent for a keyword, leaving older content misaligned.
 
-## Workflow
-1. Collect and validate inputs.
-2. Analyze relevant SEO signals.
-3. Identify opportunities, problems, and risks.
-4. Prioritize actions by impact and effort.
-5. Implement or recommend changes.
-6. Validate results.
-7. Monitor and iterate.
+## Detection / Analysis Workflow
+1. **Time-Series Comparison**: In Google Analytics/GSC, compare traffic year-over-year (YoY) for specific URLs. Look for a steady, downward slope (decay), not a sharp cliff (penalty/technical issue).
+2. **Rank Tracking**: Monitor if the page has dropped from Position 1-3 down to 4-10, or fallen to Page 2.
+3. **Competitor Audit**: Analyze the URLs that overtook your page. 
+   - Did they add video?
+   - Do they have faster load times?
+   - Did they update the year (e.g., 2023 -> 2024)?
+4. **Search Volume Check**: Verify if the keyword itself is losing popularity (Google Trends). If global search volume drops, traffic drops naturally—this is not content decay.
 
-## Tools
-Document appropriate tools, APIs, crawlers, analytics platforms, or scripts.
+## Implementation / Recovery
+- Execute a `content-refresh` to update the page.
+- Expand the topic cluster to reinforce the decayed page.
+- Acquire new, high-quality backlinks pointing directly to the decayed URL.
 
-## Outputs
-Define reports, findings, recommendations, briefs, or actions.
-
-## Validation
-Explain how to verify correctness and measure the outcome.
-
-## Common failures
-Document common mistakes, false positives, and troubleshooting.
-
-## Metrics
-List relevant KPIs and leading indicators.
-
-## Risks and boundaries
-Document policy, implementation, ethical, and operational risks.
-
-## Related skills
-Link related skills from this repository.
+## AI Agent Instructions
+IF analyzing a traffic drop for a specific URL:
+1. COMPARE traffic curve (gradual slope vs sharp cliff).
+2. CHECK Google Trends for the primary keyword.
+3. IF gradual decline AND search volume is stable, CLASSIFY as Content Decay.
+4. INITIATE `content-refresh` protocol.

@@ -1,42 +1,31 @@
-# SEO Skill: site architecture
+# Site Architecture
 
 ## Purpose
-Define the purpose and SEO outcome for site architecture.
+To structure a website's pages and directories in a logical, hierarchical manner that maximizes crawl efficiency, link equity distribution, and user navigation.
 
-## When to use
-Document when an SEO system should invoke this skill.
+## What This Skill Does
+Transforms a flat, chaotic website into a structured hierarchy (like a well-organized library). Good architecture ensures that PageRank flows from the homepage down to the deepest product/article pages.
 
-## Inputs
-- Website and target market
-- Search and analytics data
-- Relevant technical or content data
+## Core Concepts
+- **Click Depth (Crawl Depth)**: The number of clicks it takes to reach a page from the homepage. Goal: Keep all important pages within 3 clicks.
+- **Siloing (Hub and Spoke)**: Grouping related content under a specific sub-directory (e.g., `/shoes/running/` and `/shoes/basketball/`).
+- **Orphan Pages**: Pages with absolutely no internal links pointing to them.
+- **Faceted Navigation**: E-commerce filters (color, size, price) that can create millions of parameter URLs, destroying crawl budget.
 
-## Workflow
-1. Collect and validate inputs.
-2. Analyze relevant SEO signals.
-3. Identify opportunities, problems, and risks.
-4. Prioritize actions by impact and effort.
-5. Implement or recommend changes.
-6. Validate results.
-7. Monitor and iterate.
+## Step-by-Step Workflow
+1. **URL Mapping**: Plan the taxonomy before building. 
+   - Bad: `site.com/product-1234`
+   - Good: `site.com/category/sub-category/product-name`
+2. **Internal Linking**: Implement breadcrumbs (Home > Category > Product) on all pages.
+3. **Flatten the Architecture**: Use mega-menus or footer links to reduce click depth for critical category pages.
+4. **Manage Facets**: Use `robots.txt` disallows or `nofollow` on endless filter combinations (`?price=10-20&color=red`).
 
-## Tools
-Document appropriate tools, APIs, crawlers, analytics platforms, or scripts.
+## Common Problems
+- **Deep Architecture**: Having to click "Next Page" 50 times on a blog to reach old posts.
+- **Keyword Cannibalization across folders**: Having `/blog/running-shoes` and `/store/running-shoes` competing.
 
-## Outputs
-Define reports, findings, recommendations, briefs, or actions.
-
-## Validation
-Explain how to verify correctness and measure the outcome.
-
-## Common failures
-Document common mistakes, false positives, and troubleshooting.
-
-## Metrics
-List relevant KPIs and leading indicators.
-
-## Risks and boundaries
-Document policy, implementation, ethical, and operational risks.
-
-## Related skills
-Link related skills from this repository.
+## AI Agent Instructions
+IF analyzing site architecture:
+1. CALCULATE click depth using crawl data.
+2. IDENTIFY orphan pages.
+3. RECOMMEND breadcrumbs and category-level hub pages.

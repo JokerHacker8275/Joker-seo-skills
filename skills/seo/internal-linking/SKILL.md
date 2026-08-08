@@ -1,42 +1,31 @@
-# SEO Skill: internal linking
+# Internal Linking
 
 ## Purpose
-Define the purpose and SEO outcome for internal linking.
+To distribute PageRank (authority) throughout a website and establish semantic relationships between pages.
 
-## When to use
-Document when an SEO system should invoke this skill.
+## What This Skill Does
+Guides both users and search engines to the most important pages on a site. It establishes topical clusters and signals to search engines which page is the definitive authority on a specific keyword.
 
-## Inputs
-- Website and target market
-- Search and analytics data
-- Relevant technical or content data
+## Core Concepts
+- **PageRank Flow**: Authority flows from highly linked pages (usually the Homepage) down through internal links.
+- **Anchor Text**: The clickable text of a link. Internal links should use exact or partial match keywords (e.g., "best running shoes" instead of "click here").
+- **Orphan Pages**: Pages with no internal links. They are almost invisible to search engines.
+- **Contextual Links**: Links placed within the body content, which carry more weight than links in footers or sidebars.
 
-## Workflow
-1. Collect and validate inputs.
-2. Analyze relevant SEO signals.
-3. Identify opportunities, problems, and risks.
-4. Prioritize actions by impact and effort.
-5. Implement or recommend changes.
-6. Validate results.
-7. Monitor and iterate.
+## Step-by-Step Workflow
+1. **Identify the Target Page**: Determine the URL you want to rank higher.
+2. **Find Source Pages**: Use Google `site:yourdomain.com "keyword"` to find existing pages on your site that mention the target keyword.
+3. **Add Links**: Edit the source pages to add contextual internal links pointing to the target page, using descriptive anchor text.
+4. **Audit for Orphans**: Crawl the site (using Screaming Frog or similar) to find and link orphan pages.
+5. **Fix Broken Links**: Identify and update internal links that point to 404 pages or through 301 redirects.
 
-## Tools
-Document appropriate tools, APIs, crawlers, analytics platforms, or scripts.
+## Prioritization
+- **High**: Linking from pages with high backlinks to important sales/conversion pages.
+- **Medium**: Fixing broken internal links.
+- **Low**: Optimizing footer links.
 
-## Outputs
-Define reports, findings, recommendations, briefs, or actions.
-
-## Validation
-Explain how to verify correctness and measure the outcome.
-
-## Common failures
-Document common mistakes, false positives, and troubleshooting.
-
-## Metrics
-List relevant KPIs and leading indicators.
-
-## Risks and boundaries
-Document policy, implementation, ethical, and operational risks.
-
-## Related skills
-Link related skills from this repository.
+## AI Agent Instructions
+IF tasked with improving a page's rank:
+1. SEARCH the domain for contextually relevant source pages.
+2. EXTRACT paragraphs mentioning related topics.
+3. RECOMMEND specific anchor text and insertion points for internal links.

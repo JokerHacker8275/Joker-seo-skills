@@ -1,42 +1,25 @@
-# SEO Skill: structured data
+# Structured Data
 
 ## Purpose
-Define the purpose and SEO outcome for structured data.
+A broader concept that encompasses Schema Markup. It refers to organizing data so that it can be stored, queried, and analyzed efficiently by machines (LLMs, search engines, databases).
 
-## When to use
-Document when an SEO system should invoke this skill.
+## What This Skill Does
+While `schema-markup` focuses on the specific syntax (JSON-LD) for Google Rich Results, **Structured Data** is the architectural approach to organizing your entire content database (e.g., Headings, Tables, Lists, APIs) so that AI crawlers can extract relationships.
 
-## Inputs
-- Website and target market
-- Search and analytics data
-- Relevant technical or content data
+## Core Concepts
+- **Machine-Readable**: Content formatted so that a parser can easily extract it (e.g., using proper `<table>` tags instead of CSS grid pseudo-tables).
+- **Knowledge Graph Interoperability**: Linking your on-page structured data to external knowledge bases using `sameAs` attributes (linking to Wikipedia, Wikidata, LinkedIn).
+- **Semantic HTML**: Using `<article>`, `<aside>`, `<nav>`, `<header>`, `<footer>`, `<main>` correctly so machines understand the page layout without rendering CSS.
 
-## Workflow
-1. Collect and validate inputs.
-2. Analyze relevant SEO signals.
-3. Identify opportunities, problems, and risks.
-4. Prioritize actions by impact and effort.
-5. Implement or recommend changes.
-6. Validate results.
-7. Monitor and iterate.
+## Step-by-Step Workflow
+1. **Semantic HTML Audit**: Ensure the page doesn't just use `<div>` tags for everything. Use `<address>` for addresses, `<time>` for dates.
+2. **List Optimization**: Use `<ul>`, `<ol>`, and `<li>` for steps or items. LLMs and Featured Snippets rely heavily on HTML lists.
+3. **Data Tables**: Present raw data in properly formatted `<table>` elements with `<th>` headers.
+4. **Knowledge Graph Linking**: Use `sameAs` in your Organization or Person schema to point to verified, highly trusted external profiles.
 
-## Tools
-Document appropriate tools, APIs, crawlers, analytics platforms, or scripts.
-
-## Outputs
-Define reports, findings, recommendations, briefs, or actions.
-
-## Validation
-Explain how to verify correctness and measure the outcome.
-
-## Common failures
-Document common mistakes, false positives, and troubleshooting.
-
-## Metrics
-List relevant KPIs and leading indicators.
-
-## Risks and boundaries
-Document policy, implementation, ethical, and operational risks.
-
-## Related skills
-Link related skills from this repository.
+## AI Agent Instructions
+IF auditing content for structured data:
+1. CHECK for proper semantic HTML5 tags.
+2. CHECK if sequential steps use `<ol>` tags.
+3. CHECK if tabular data uses `<table>`.
+4. RECOMMEND structural changes to make content parsing deterministic rather than heuristic.

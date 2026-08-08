@@ -1,42 +1,30 @@
-# SEO Skill: schema markup
+# Schema Markup
 
 ## Purpose
-Define the purpose and SEO outcome for schema markup.
+To provide search engines with explicit, machine-readable clues about the meaning of a page, enabling rich results (stars, recipes, FAQs) and improving semantic understanding.
 
-## When to use
-Document when an SEO system should invoke this skill.
+## What This Skill Does
+Implements JSON-LD script tags containing Schema.org vocabulary. This bypasses the need for search engines to "guess" what a page is about based on natural language processing, delivering facts directly into their Knowledge Graph.
 
-## Inputs
-- Website and target market
-- Search and analytics data
-- Relevant technical or content data
+## Core Concepts
+- **JSON-LD**: The Google-recommended format for schema markup (JavaScript Object Notation for Linked Data).
+- **Rich Results**: Enhanced search results (e.g., Recipe carousels, FAQ accordions, Review stars, Job postings) triggered by specific schemas.
+- **Microdata / RDFa**: Older, inline methods of adding schema. Avoid these; use JSON-LD.
+- **Entity Definition**: Using `@type` and `@id` to clearly define what an object is (e.g., `@type: "Organization"`).
 
-## Workflow
-1. Collect and validate inputs.
-2. Analyze relevant SEO signals.
-3. Identify opportunities, problems, and risks.
-4. Prioritize actions by impact and effort.
-5. Implement or recommend changes.
-6. Validate results.
-7. Monitor and iterate.
+## Step-by-Step Workflow
+1. **Identify Opportunity**: What is the page type? (Article, Product, LocalBusiness, FAQ).
+2. **Draft JSON-LD**: Write the JSON-LD script matching Google's required properties for that rich result type.
+3. **Validate**: Use Google's Rich Results Test and the Schema Markup Validator to check for syntax errors or missing required fields.
+4. **Deploy**: Inject the `<script type="application/ld+json">` into the `<head>` or `<body>`.
 
-## Tools
-Document appropriate tools, APIs, crawlers, analytics platforms, or scripts.
+## Common Mistakes
+- **Spamming Schema**: Adding FAQ schema for FAQs that are hidden from the user (violates Google guidelines).
+- **Mismatched Data**: The price in the Product schema is $50, but the price visible on the page is $60.
+- **Missing Required Fields**: Forgetting to add an image to an Article schema.
 
-## Outputs
-Define reports, findings, recommendations, briefs, or actions.
-
-## Validation
-Explain how to verify correctness and measure the outcome.
-
-## Common failures
-Document common mistakes, false positives, and troubleshooting.
-
-## Metrics
-List relevant KPIs and leading indicators.
-
-## Risks and boundaries
-Document policy, implementation, ethical, and operational risks.
-
-## Related skills
-Link related skills from this repository.
+## AI Agent Instructions
+IF implementing schema:
+1. IDENTIFY page primary entity.
+2. GENERATE exact JSON-LD matching Google's official developer documentation for the entity.
+3. RECOMMEND testing via Rich Results Test API before deployment.
